@@ -33,5 +33,5 @@ private:
 private:
 	std::array<char, BUFFLEN> m_buffer; ///< Буффер для форматированной строки.
 	std::mutex m_mutex; ///< Мьютекс для блокирования одновременного доступа к записи.
-	std::ofstream m_file; ///< Файл для логирования.
+	std::ofstream m_file{"log.txt"}; ///< Файл для логирования.
 };
